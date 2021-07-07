@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>LEARN</pattern>
+        <template>Absolutely, <get name = "student name"></get>.<br/>
+        There are many different career paths when beginning a career in Information Technology or Computer Science.<br/>
+        With multiple positions requiring varying levels of technical expertise at every tier of business, there are many possibilities and multiple avenues to take if one were interested in pursuing a career in technology<br/>
+        Listed below are various positions in the technological field that are very popular today.<br/>
+        
+        <button>
+            <text>Software Engineer</text>
+            <url>https://www.computerscience.org/careers/software-engineer/</url>
+        </button>
+        
+        <button>
+            <text>Web Developer</text>
+            <url>https://www.computerscience.org/careers/web-developer/</url>
+        </button>
+        
+        <button>
+            <text>Network Administrator</text>
+            <url>https://www.computerscience.org/careers/network-administrator/</url>
+        </button>
+        
+        <button>
+            <text>Data Scientist</text>
+            <url>https://www.computerscience.org/careers/data-science/</url>
+        </button>
+        
+        <button>
+            <text>Systems Analyst</text>
+            <url>https://www.computerscience.org/careers/systems-analyst/</url>
+        </button>
+        
+        <button>
+            <text>Video Game Developer</text>
+            <url>https://www.computerscience.org/careers/video-game-designer/</url>
+        </button>
+        
+        <button>
+            <text>Database Administrator</text>
+            <url>https://www.computerscience.org/careers/database-administrator/</url>
+        </button>
+        
+        Click on any one of these options to learn more about it. For help in making a decision, type "Help me pick"
+        </template>
+    </category>
+
+</aiml>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <!-- Various questions to ask user in order to determine appropriate job selection. Utilizes yes or no questions -->
+    
+    <category>
+        <pattern>CHOOSE</pattern>
+        <template><srai>HELP ME PICK</srai></template>
+    </category>
+	    
+    <category>
+        <pattern>HELP ME PICK</pattern>
+        <template>Of course! <get name = "student name"></get>. Let's start with some yes or no questions. Keep your responses simple to avoid errors.<br/>
+        Do you enjoy programming?</template>
+    </category>
+    
+    
+    
+    <category>
+        <pattern>YES</pattern>
+        <that>DO YOU ENJOY PROGRAMMING</that>
+        <template>Haha, well good considering you want a tech career! There's many opportunties out there but programming is always abundant.<br/>
+        Do you prefer user-based experiences? Were you interested in frontend development?</template>
+    </category>
+    
+    <category>
+        <pattern>YES</pattern>
+        <that>WERE YOU INTERESTED IN FRONTEND DEVELOPMENT</that>
+        <template>With an interest in front-end, I'd look into being a
+        <link>
+            <text>Web Developer</text>
+            <url>https://www.computerscience.org/careers/web-developer/</url>
+        </link>
+        <br/>Sounds fun right? Type "choose" again if you'd like to start over.</template>
+    </category>
+    
+    <category>
+        <pattern>NO</pattern>
+        <that>WERE YOU INTERESTED IN FRONTEND DEVELOPMENT</that>
+        <template>No worries. Interest in video games, or working with large amounts of data?</template>
+    </category>
+    
+    <category>
+        <pattern>NO</pattern>
+        <that>INTEREST IN VIDEO GAMES, OR WORKING WITH LARGE AMOUNTS OF DATA</that>
+        <template>Maybe try out being a 
+        <link>
+            <text>Software Engineer</text>
+            <url>https://www.computerscience.org/careers/software-engineer/</url>
+        </link>
+        <br/> A lucrative position that will help you gain solid experience and potentially pique interest in a particular field. Type "choose" if you'd like to start over</template>
+    </category>
+    
+     <category>
+        <pattern>YES</pattern>
+        <that>INTEREST IN VIDEO GAMES, OR WORKING WITH LARGE AMOUNTS OF DATA</that>
+        <template>I'm guessing you like video games then? Everyone does!</template>
+    </category>
+    
+    
+    <category>
+        <pattern>NO</pattern>
+        <that>EVERYONE DOES</that>
+        <template>Well you said you like data right? Maybe try being a <link>
+            <text>Data Scientist</text>
+            <url>https://www.computerscience.org/careers/data-scientist/</url>
+        </link>
+        <br/> These jobs will always be around, every industry needs a data person. Type "choose" if you'd like to start over</template>
+    </category>
+    
+    <category>
+        <pattern>YES</pattern>
+        <that>EVERYONE DOES</that>
+        <template>Perfect! The video game industry is thriving more than ever. Try out being a  <link>
+            <text>Video Game Developer</text>
+            <url>https://www.computerscience.org/careers/video-game-developer/</url>
+        </link>
+        <br/> It's a tough career, but certainly rewarding to those who are passionate for it! Type "choose" to start over.</template>
+    </category>
+    
+    <!-- Options for if the user chooses NO for "Do you like Programming?" -->
+    <category>
+        <pattern>NO</pattern>
+        <that>DO YOU ENJOY PROGRAMMING</that>
+        <template>No worries, <get name = "student name"></get>. Not all tech jobs have to be coding. What about your communication skills? Are you a people person?</template>
+    </category>
+    
+    <!-- Are you a people person? Y/N -->
+    
+    <category>
+        <pattern>YES</pattern>
+        <that>ARE YOU A PEOPLE PERSON</that>
+        <template>Sounds good! I think a good fit for you would be an analyst type role, perhaps a
+        <link>
+            <text>Systems Analyst</text>
+            <url>https://www.computerscience.org/careers/systems-analyst/</url>
+        </link>Click to learn more. Or type "choose" to start over.</template>
+    </category>
+    
+    <category>
+        <pattern>NO</pattern>
+        <that>ARE YOU A PEOPLE PERSON</that>
+        <template>Me neither. Kinda hard to be social when you're a robot! What interests you more? Data or Networking?</template>
+    </category>
+    
+    <!-- Data or Networking? Data/Networking -->
+    
+    <category>
+        <pattern>DATA</pattern>
+        <that>DATA OR NETWORKING</that>
+        <template>Alright then, I think a potential choice would be in an administrative role, maybe a
+        <link>
+            <text>Database Administrator</text>
+            <url>https://www.computerscience.org/careers/database-administrator/</url>
+        </link>Click the link to learn more or type "choose" to try again.</template>
+    </category>
+    
+    <category>
+        <pattern>NETWORKING</pattern>
+        <that>DATA OR NETWORKING</that>
+        <template>Interesting choices, I thnk for you, a good fit would be some sort of administrative role, perhaps being a 
+        <link>
+            <text>Network Administrator</text>
+            <url>https://www.computerscience.org/careers/network-administrator/</url>
+        </link>You can click on the link for more information, or type "choose" to try different choices.</template>
+    </category>
+</aiml>

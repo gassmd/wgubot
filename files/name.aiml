@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+      <pattern>MY NAME IS *</pattern>
+      <template>Welcome to our job suggestion program, <star/>. We hope you're doing well today <br/>
+      We would like to give you some suggestions on how to potentially further your information technology or computer science career.<br/> 
+      If you would like me to help choose a potential career for you, type "Choose"<br/>
+      <think><set name="student name"><star/></set></think>
+      Otherwise, if you would like to learn about different carrer opportunities, type "Learn"</template>
+  </category>
+  
+  <category>
+      <pattern>I'M *</pattern>
+        <template><srai>MY NAME IS <star/></srai></template>
+  </category>
+  
+  <category>
+      <pattern>I AM *</pattern>
+        <template><srai>MY NAME IS <star/></srai></template>
+  </category>
+  
+  <category>
+      <pattern>CALL ME *</pattern>
+        <template><srai>MY NAME IS <star/></srai></template>
+  </category>
+</aiml>

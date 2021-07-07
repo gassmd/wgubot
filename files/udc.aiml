@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    
+        
+    <category>
+        <pattern>*</pattern>
+        <that>HELLO! WELCOME TO OUR JOB SUGGESTION PROGRAM. WHAT'S YOUR NAME?</that>
+        <template><srai>MY NAME IS <star/></srai></template>
+    </category>
+    
+   <category>
+    <pattern>*</pattern>
+    <template>Sorry, I did not understand your response. I am very simplistic. Typically, I take YES or NO responses. If you would like to start over, type in a greeting (Hi, Hello) or your name. (ex. "I Am ____" or "My name is ____")</template>
+  </category>
+  
+  <category>
+      <pattern>MY NAME IS *</pattern>
+      <template>Welcome to our job suggestion program, <star/>. We hope you're doing well today <br/>
+      We would like to give you some suggestions on how to potentially further your information technology or computer science career.<br/> 
+      If you would like me to choose a potential career for you, type "Choose"<br/>
+      If you would like to learn about different carrer opportunities, type "Learn"</template>
+  </category>
+  
+  <category>
+      <pattern>I'M *</pattern>
+        <template><srai>MY NAME IS <star/></srai></template>
+  </category>
+  
+  <category>
+      <pattern>I AM *</pattern>
+        <template><srai>MY NAME IS <star/></srai></template>
+  </category>
+  
+  <category>
+      <pattern>CALL ME *</pattern>
+        <template><srai>MY NAME IS <star/></srai></template>
+  </category>
+</aiml>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ <category>
+        <pattern>HI</pattern>
+            <template>
+              <random>
+                <li>Hello! Welcome to our job suggestion program. What's your name?</li>
+                <li>Well hello there. Thank you for choosing WGU job suggestions, please state your name.</li>
+                <li>Howdy. This is the WGU job suggestion application, what shall we refer to you as? (Your name)</li>
+                <li>Good day. Please provide an identifier (your name) to continue with the job suggestion program</li>
+                <li>Hi, friend. Thank you for choosing WGU. Please provide your name to assist in job suggestion</li>
+              </random>
+        </template>
+    </category>
+
+    
+    <category>
+        <pattern>HELLO</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>GREETINGS</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>GOOD DAY</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HOWDY</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>SUP</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHATS UP</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT'S UP</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+</aiml>
